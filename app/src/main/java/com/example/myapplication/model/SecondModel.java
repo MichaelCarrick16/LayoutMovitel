@@ -1,7 +1,9 @@
 package com.example.myapplication.model;
 
 
-public class SecondModel {
+import java.io.Serializable;
+
+public class SecondModel implements Serializable {
     private String nameSecond;
     private String nameFragment;
 

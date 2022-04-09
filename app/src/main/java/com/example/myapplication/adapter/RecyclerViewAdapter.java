@@ -53,10 +53,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
             FirstModel firstModel = mList.get(position);
             if(i == position){
-            holder.tvLineRecyclerView.setBackgroundColor(mContext.getResources().getColor(android.R.color.black));
+            holder.tvLineRecyclerView.setBackgroundColor(mContext.getResources().getColor(android.R.color.holo_red_dark));
+            holder.textView.setTextColor(mContext.getResources().getColor(android.R.color.holo_red_dark));
             }
             else{
             holder.tvLineRecyclerView.setBackgroundColor(mContext.getResources().getColor(android.R.color.white));
+            holder.textView.setTextColor(mContext.getResources().getColor(android.R.color.black));
             holder.textView.setText(firstModel.getName());
             }
 
